@@ -33,6 +33,24 @@ export default new Router({
             // 搜索
             component: () =>
                 import ('./views/Search.vue')
+        },
+        {
+            path: '/khggc',
+            // 客户公共池
+            component: () =>
+                import ('./views/Khggc.vue')
+        },
+        {
+            path: '/xs',
+            // 线索
+            component: () =>
+                import ('./views/Xs.vue')
+        },
+        {
+            path: '/sj',
+            // 商机
+            component: () =>
+                import ('./views/Sj.vue')
         }
     ]
 })

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="xtsz">
     <Header></Header>
     <el-container class="sec">
       <el-aside class="aside">
@@ -14,7 +14,7 @@
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
-              <img src="../assets/img/20.png" /> 人员与部门 
+              <img src="../assets/img/20.png" /> 人员与部门
             </template>
             <el-menu-item-group>
               <el-menu-item index="1-1">人员与部门</el-menu-item>
@@ -140,27 +140,29 @@
   cursor: pointer;
 }
 </style>
-<style>
-.el-menu-item,
-.el-submenu__title {
-  height: 46px;
-  line-height: 46px;
-  position: relative;
-  white-space: nowrap;
-  list-style: none;
-  transform: scale(0.8);
-}
-.el-menu-item-group__title {
-  padding: 0;
-  line-height: normal;
-  font-size: 12px;
-  color: #909399;
-}
-.el-submenu .el-menu-item {
-  height: 30px;
-  line-height: 30px;
-  padding: 0 45px;
-  min-width: 200px;
+<style lang="scss">
+#xtsz {
+  .el-menu-item,
+  .el-submenu__title {
+    height: 46px;
+    line-height: 46px;
+    position: relative;
+    white-space: nowrap;
+    list-style: none;
+    transform: scale(0.8);
+  }
+  .el-menu-item-group__title {
+    padding: 0;
+    line-height: normal;
+    font-size: 12px;
+    color: #909399;
+  }
+  .el-submenu .el-menu-item {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 45px;
+    min-width: 200px;
+  }
 }
 </style>
 <script>

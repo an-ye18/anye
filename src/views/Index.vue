@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="index">
     <Header></Header>
     <div style="height: 65px"></div>
     <el-container class="sec">
@@ -69,7 +69,10 @@
               <el-collapse accordion>
                 <el-collapse-item>
                   <template slot="title">
-                    <i class="el-icon-message-solid"></i> &nbsp;待办事项：3
+                    <span
+                      ><i class="el-icon-message-solid"></i>
+                      &nbsp;待办事项：3</span
+                    >
                   </template>
                   <div class="secL-2">
                     <p>
@@ -722,78 +725,80 @@
   padding: 15px 5px;
 }
 </style>
- <style>
-.el-radio-button:first-child .el-radio-button__inner {
-  border-radius: 0;
-}
-.el-radio-button:last-child .el-radio-button__inner {
-  border-radius: 0;
-}
-.el-radio-button--mini .el-radio-button__inner {
-  padding: 2px 8px;
-  font-size: 12px;
-  border-radius: 0;
-}
-.el-collapse-item__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  height: 26px;
-  line-height: 48px;
-  background-color: #fff;
-  color: #303133;
-  cursor: pointer;
-  border-bottom: 1.5px solid rgb(235, 232, 232);
-  font-size: 13px;
-  font-weight: 500;
-  transition: border-bottom-color 0.3s;
-  outline: 0;
-}
-.el-collapse-item__content {
-  padding-bottom: 5px;
-  font-size: 12px;
-  color: #303133;
-  line-height: 1.769230769230769;
-}
-.el-tabs__nav-scroll {
-  overflow: hidden;
-  float: right;
-}
-.el-tabs__item {
-  padding: 0 20px;
-  height: 30px;
-  box-sizing: border-box;
-  line-height: 30px;
-  display: inline-block;
-  list-style: none;
-  font-size: 14px;
-  font-weight: 500;
-  color: #303133;
-  position: relative;
-}
-.el-badge__content.is-dot {
-  height: 6px;
-  width: 6px;
-  padding: 0;
-  right: 0;
-  border-radius: 50%;
-  margin-top: 5px;
-}
-.el-card__body {
-  padding: 0;
-}
-.el-card {
-  border: 1px solid rgb(245, 242, 242);
-  background-color: #fff;
-  color: #303133;
-  transition: 0.3s;
-}
-.el-tabs--border-card {
-  background: #fff;
-  height: 598px;
-  border: 1px solid #dcdfe6;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+<style lang="scss">
+#index {
+  .el-radio-button:first-child .el-radio-button__inner {
+    border-radius: 0;
+  }
+  .el-radio-button:last-child .el-radio-button__inner {
+    border-radius: 0;
+  }
+  .el-radio-button--mini .el-radio-button__inner {
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 0;
+  }
+  .el-collapse-item__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    height: 26px;
+    line-height: 48px;
+    background-color: #fff;
+    color: #303133;
+    cursor: pointer;
+    border-bottom: 1.5px solid rgb(235, 232, 232);
+    font-size: 13px;
+    font-weight: 500;
+    transition: border-bottom-color 0.3s;
+    outline: 0;
+  }
+  .el-collapse-item__content {
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #303133;
+    line-height: 1.769230769230769;
+  }
+  .el-tabs__nav-scroll {
+    overflow: hidden;
+    float: right;
+  }
+  .el-tabs__item {
+    padding: 0 20px;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #303133;
+    position: relative;
+  }
+  .el-badge__content.is-dot {
+    height: 6px;
+    width: 6px;
+    padding: 0;
+    right: 0;
+    border-radius: 50%;
+    margin-top: 5px;
+  }
+  .el-card__body {
+    padding: 0;
+  }
+  .el-card {
+    border: 1px solid rgb(245, 242, 242);
+    background-color: #fff;
+    color: #303133;
+    transition: 0.3s;
+  }
+  .el-tabs--border-card {
+    background: #fff;
+    height: 598px;
+    border: 1px solid #dcdfe6;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12), 0 0 6px 0 rgba(0, 0, 0, 0.04);
+  }
 }
 </style>
 <script>
