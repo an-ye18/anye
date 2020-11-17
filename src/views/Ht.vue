@@ -1,5 +1,5 @@
 <template>
-  <div id="xs">
+  <div id="ht">
     <Header></Header>
     <el-container class="sec">
       <el-aside class="aside">
@@ -7,7 +7,7 @@
           <img src="../assets/img/u2697.svg" width="25px" />
           <el-dropdown class="aside1-1" trigger="click">
             <span class="el-dropdown-link">
-              客户主线<i class="el-icon-arrow-down el-icon--right"></i>
+              合同分类<i class="el-icon-arrow-down el-icon--right"></i>
             </span>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item>全部</el-dropdown-item>
@@ -85,38 +85,32 @@
           </div>
           <div>
             <el-card shadow="hover">
-              全部商机<br />
-              <h4>69</h4>
+              全部合同<br />
+              <h4>26</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              今日新增<br />
+              本周到期<br />
               <h4>12</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              今日应联系<br />
-              <h4>5</h4>
+              今日签约<br />
+              <h4>￥12000 元</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              分配给我的<br />
-              <h4>1</h4>
+              本月签约<br />
+              <h4>￥52000 元</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              移交给我的<br />
-              <h4>2</h4>
-            </el-card>
-          </div>
-          <div>
-            <el-card shadow="hover">
-              今天生日<br />
-              <h4>5</h4>
+              本年签约<br />
+              <h4>￥92000 元</h4>
             </el-card>
           </div>
           <div style="float: right; margin-top: 10px">
@@ -133,11 +127,18 @@
           <div>
             已选
             <span style="font-weight: bold">6</span> 条
-            <el-button :plain="true" @click="open1">领取</el-button>
+            <el-button :plain="true" @click="open1">领用</el-button>
             <el-button :plain="true" @click="open2">分配</el-button>
             <el-button :plain="true" @click="open2">发短信</el-button>
             <div class="main2-1">
-              <span><img src="../assets/img/25.png" width="20px" style="vertical-align: buttom;"> 预警：即将有5条商机自动转入公共池，立即查看！</span>
+              <span>
+                <img
+                  src="../assets/img/25.png"
+                  width="20px"
+                  style="vertical-align: buttom"
+                />
+                预警：您有3份合同即将到期，立即查看...
+              </span>
               <span>
                 <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
                 <el-button slot="reference" style="border: none">
@@ -276,10 +277,10 @@
 .main2-1 {
   float: right;
 }
-.main2-1>span:nth-of-type(1) {
-    position: relative;
-    top: -5px;
-    right: 30px;
+.main2-1 > span:nth-of-type(1) {
+  position: relative;
+  top: -5px;
+  right: 30px;
   color: red;
   text-decoration: underline;
 }
@@ -307,7 +308,7 @@
 }
 </style>
 <style lang="scss">
-#xs {
+#ht {
   .el-card__body h4 {
     text-align: center;
   }
@@ -315,7 +316,7 @@
     cursor: pointer;
     line-height: 18px;
     padding: 1px 5px;
-    width: 60px;
+    width: 70px;
     height: 35px;
     text-align: center;
   }

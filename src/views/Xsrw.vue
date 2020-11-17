@@ -1,57 +1,7 @@
 <template>
-  <div id="xs">
+  <div id="xsrw">
     <Header></Header>
     <el-container class="sec">
-      <el-aside class="aside">
-        <p class="aside1">
-          <img src="../assets/img/u2697.svg" width="25px" />
-          <el-dropdown class="aside1-1" trigger="click">
-            <span class="el-dropdown-link">
-              客户主线<i class="el-icon-arrow-down el-icon--right"></i>
-            </span>
-            <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item>全部</el-dropdown-item>
-              <el-dropdown-item>主分类</el-dropdown-item>
-              <el-dropdown-item>行业</el-dropdown-item>
-            </el-dropdown-menu>
-          </el-dropdown>
-        </p>
-        <el-menu>
-          <el-submenu index="1">
-            <template slot="title">
-              <img src="../assets/img/u2665.svg" width="20px" /> 区域代理
-            </template>
-            <el-menu-item-group class="aside2">
-              <el-menu-item index="1-1"
-                ><i class="el-icon-location-outline"></i>四川省</el-menu-item
-              >
-              <el-menu-item index="1-2"
-                ><i class="el-icon-location-outline"></i>福建省</el-menu-item
-              >
-              <el-menu-item index="1-3"
-                ><i class="el-icon-location-outline"></i>广东省</el-menu-item
-              >
-              <el-menu-item index="1-4"
-                ><i class="el-icon-location-outline"></i>黑龙江省</el-menu-item
-              >
-              <el-menu-item index="1-5"
-                ><i class="el-icon-location-outline"></i>辽宁省</el-menu-item
-              >
-              <el-menu-item index="1-6"
-                ><i class="el-icon-location-outline"></i>吉林省</el-menu-item
-              >
-              <el-menu-item index="1-7"
-                ><i class="el-icon-location-outline"></i>浙江省</el-menu-item
-              >
-            </el-menu-item-group>
-          </el-submenu>
-          <el-submenu index="2">
-            <template slot="title">
-              <img src="../assets/img/u2665.svg" width="20px" /> 普通客户
-            </template>
-          </el-submenu>
-        </el-menu>
-      </el-aside>
       <el-main class="main">
         <div class="main1">
           <div class="aside1-2">
@@ -77,7 +27,7 @@
                 </el-tabs>
                 <el-button slot="reference">
                   <span class="el-dropdown-link">
-                    我负责的<i class="el-icon-arrow-down el-icon--right"> </i>
+                    我的任务<i class="el-icon-arrow-down el-icon--right"> </i>
                   </span>
                 </el-button>
               </el-popover>
@@ -85,38 +35,38 @@
           </div>
           <div>
             <el-card shadow="hover">
-              全部商机<br />
-              <h4>69</h4>
+              本月任务<br />
+              <h4>￥52000 元</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              今日新增<br />
-              <h4>12</h4>
+              已完成<br />
+              <h4>￥12000 元</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              今日应联系<br />
-              <h4>5</h4>
+              本年任务<br />
+              <h4>￥92000 元</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              分配给我的<br />
-              <h4>1</h4>
+              已完成<br />
+              <h4>￥52000 元</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              移交给我的<br />
-              <h4>2</h4>
+              团队任务<br />
+              <h4>￥99999 元</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              今天生日<br />
-              <h4>5</h4>
+              已完成<br />
+              <h4>￥72000 元</h4>
             </el-card>
           </div>
           <div style="float: right; margin-top: 10px">
@@ -127,40 +77,6 @@
               size="mini"
             >
             </el-input>
-          </div>
-        </div>
-        <div class="main2">
-          <div>
-            已选
-            <span style="font-weight: bold">6</span> 条
-            <el-button :plain="true" @click="open1">领取</el-button>
-            <el-button :plain="true" @click="open2">分配</el-button>
-            <el-button :plain="true" @click="open2">发短信</el-button>
-            <div class="main2-1">
-              <span><img src="../assets/img/25.png" width="20px" style="vertical-align: buttom;"> 预警：即将有5条商机自动转入公共池，立即查看！</span>
-              <span>
-                <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
-                <el-button slot="reference" style="border: none">
-                  <img src="../assets/img/u2650.svg" width="20px" />
-                </el-button>
-                <!-- </el-popover> -->
-              </span>
-              <span>
-                <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
-                <el-button slot="reference" style="border: none">
-                  <img src="../assets/img/u2659.svg" width="20px" />
-                </el-button>
-                <!-- </el-popover> -->
-              </span>
-              <span>
-                <el-popover placement="bottom" width="250" trigger="hover"
-                  ><img src="../assets/img/24.png" width="250px" />
-                  <el-button slot="reference" style="border: none">
-                    <img src="../assets/img/u2626.svg" width="23px" />
-                  </el-button>
-                </el-popover>
-              </span>
-            </div>
           </div>
         </div>
         <div>
@@ -276,10 +192,10 @@
 .main2-1 {
   float: right;
 }
-.main2-1>span:nth-of-type(1) {
-    position: relative;
-    top: -5px;
-    right: 30px;
+.main2-1 > span:nth-of-type(1) {
+  position: relative;
+  top: -5px;
+  right: 30px;
   color: red;
   text-decoration: underline;
 }
@@ -307,15 +223,16 @@
 }
 </style>
 <style lang="scss">
-#xs {
+#xsrw {
   .el-card__body h4 {
     text-align: center;
+    color: red;
   }
   .el-card__body {
     cursor: pointer;
     line-height: 18px;
     padding: 1px 5px;
-    width: 60px;
+    width: 70px;
     height: 35px;
     text-align: center;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div id="xs">
+  <div id="khggc">
     <Header></Header>
     <el-container class="sec">
       <el-aside class="aside">
@@ -7,7 +7,7 @@
           <img src="../assets/img/u2697.svg" width="25px" />
           <el-dropdown class="aside1-1" trigger="click">
             <span class="el-dropdown-link">
-              客户主线<i class="el-icon-arrow-down el-icon--right"></i>
+              产品分类<i class="el-icon-arrow-down el-icon--right"></i>
             </span>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item>全部</el-dropdown-item>
@@ -19,7 +19,7 @@
         <el-menu>
           <el-submenu index="1">
             <template slot="title">
-              <img src="../assets/img/u2665.svg" width="20px" /> 区域代理
+              <img src="../assets/img/u2665.svg" width="20px" /> 任我协同CRM
             </template>
             <el-menu-item-group class="aside2">
               <el-menu-item index="1-1"
@@ -47,7 +47,7 @@
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
-              <img src="../assets/img/u2665.svg" width="20px" /> 普通客户
+              <img src="../assets/img/u2665.svg" width="20px" /> 管家婆CRM
             </template>
           </el-submenu>
         </el-menu>
@@ -77,47 +77,11 @@
                 </el-tabs>
                 <el-button slot="reference">
                   <span class="el-dropdown-link">
-                    我负责的<i class="el-icon-arrow-down el-icon--right"> </i>
+                    全部产品<i class="el-icon-arrow-down el-icon--right"> </i>
                   </span>
                 </el-button>
               </el-popover>
             </el-dropdown>
-          </div>
-          <div>
-            <el-card shadow="hover">
-              全部商机<br />
-              <h4>69</h4>
-            </el-card>
-          </div>
-          <div>
-            <el-card shadow="hover">
-              今日新增<br />
-              <h4>12</h4>
-            </el-card>
-          </div>
-          <div>
-            <el-card shadow="hover">
-              今日应联系<br />
-              <h4>5</h4>
-            </el-card>
-          </div>
-          <div>
-            <el-card shadow="hover">
-              分配给我的<br />
-              <h4>1</h4>
-            </el-card>
-          </div>
-          <div>
-            <el-card shadow="hover">
-              移交给我的<br />
-              <h4>2</h4>
-            </el-card>
-          </div>
-          <div>
-            <el-card shadow="hover">
-              今天生日<br />
-              <h4>5</h4>
-            </el-card>
           </div>
           <div style="float: right; margin-top: 10px">
             <el-input
@@ -127,40 +91,6 @@
               size="mini"
             >
             </el-input>
-          </div>
-        </div>
-        <div class="main2">
-          <div>
-            已选
-            <span style="font-weight: bold">6</span> 条
-            <el-button :plain="true" @click="open1">领取</el-button>
-            <el-button :plain="true" @click="open2">分配</el-button>
-            <el-button :plain="true" @click="open2">发短信</el-button>
-            <div class="main2-1">
-              <span><img src="../assets/img/25.png" width="20px" style="vertical-align: buttom;"> 预警：即将有5条商机自动转入公共池，立即查看！</span>
-              <span>
-                <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
-                <el-button slot="reference" style="border: none">
-                  <img src="../assets/img/u2650.svg" width="20px" />
-                </el-button>
-                <!-- </el-popover> -->
-              </span>
-              <span>
-                <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
-                <el-button slot="reference" style="border: none">
-                  <img src="../assets/img/u2659.svg" width="20px" />
-                </el-button>
-                <!-- </el-popover> -->
-              </span>
-              <span>
-                <el-popover placement="bottom" width="250" trigger="hover"
-                  ><img src="../assets/img/24.png" width="250px" />
-                  <el-button slot="reference" style="border: none">
-                    <img src="../assets/img/u2626.svg" width="23px" />
-                  </el-button>
-                </el-popover>
-              </span>
-            </div>
           </div>
         </div>
         <div>
@@ -247,7 +177,7 @@
 }
 .aside1-2 {
   position: relative;
-  top: -10px;
+  top: 5px;
 }
 .aside2 i {
   color: #66b1ff;
@@ -276,13 +206,6 @@
 .main2-1 {
   float: right;
 }
-.main2-1>span:nth-of-type(1) {
-    position: relative;
-    top: -5px;
-    right: 30px;
-  color: red;
-  text-decoration: underline;
-}
 .main2-1 span {
   margin-right: -20px;
   cursor: pointer;
@@ -307,7 +230,7 @@
 }
 </style>
 <style lang="scss">
-#xs {
+#khggc {
   .el-card__body h4 {
     text-align: center;
   }
@@ -470,140 +393,17 @@ export default {
           createPerson: "销售1部-厂长",
           address: "北京市天安门大道西侧高新大厦",
         },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
-        {
-          name: "济南新动力管理咨询有限公司",
-          job: "批发/零售业",
-          from: "官网注册试用",
-          type: "股份有限公司",
-          in: "潜在客户（商机）",
-          person: "李总",
-          phone: "13856982326",
-          reason: "填充文字填充文字填充文字",
-          createTime: "2019-02-18",
-          createPerson: "销售1部-厂长",
-          address: "北京市天安门大道西侧高新大厦",
-        },
+        {},
+        {},
+        {},
+        {},
+        {},
+        {},
       ],
       multipleSelection: [],
       tabPosition: "left",
     };
   },
-  methods: {
-    open1() {
-      this.$message({
-        message: "已领用成功",
-        type: "success",
-      });
-    },
-    open2() {
-      this.$message({
-        message: "请先选择要分配的客户",
-      });
-    },
-  },
+  methods: {},
 };
 </script>

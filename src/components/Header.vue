@@ -57,7 +57,7 @@
             <router-link to="/wqgl">
               <el-menu-item index="1-10">外勤管理 </el-menu-item>
             </router-link>
-            <router-link to="/cp">
+            <router-link to="/cpgl">
               <el-menu-item index="1-11">产品 </el-menu-item>
             </router-link>
           </el-menu-item-group>
@@ -114,10 +114,14 @@
               <el-button
                 class="el-icon-s-order btn"
                 slot="reference"
+                style="font-size: 16px; color: #3a8ee6"
               ></el-button>
             </el-popover>
           </template>
-          <i class="el-icon-message-solid"></i>
+          <i
+            class="el-icon-message-solid"
+            style="font-size: 13px; color: #3a8ee6"
+          ></i>
         </span>
         <span>
           <img
@@ -223,9 +227,7 @@ a {
   height: 25px;
 }
 .btn {
-  font-size: 15px;
   border: none;
-  background: none;
 }
 .el-dropdown-link {
   cursor: pointer;

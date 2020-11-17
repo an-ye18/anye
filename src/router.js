@@ -51,6 +51,48 @@ export default new Router({
             // 商机
             component: () =>
                 import ('./views/Sj.vue')
+        },
+        {
+            path: '/khgl',
+            // 客户管理
+            component: () =>
+                import ('./views/Khgl.vue')
+        },
+        {
+            path: '/ht',
+            // 合同
+            component: () =>
+                import ('./views/Ht.vue')
+        },
+        {
+            path: '/lxr',
+            // 联系人
+            component: () =>
+                import ('./views/Lxr.vue')
+        },
+        {
+            path: '/xsrw',
+            // 销售任务
+            component: () =>
+                import ('./views/Xsrw.vue')
+        },
+        {
+            path: '/rc',
+            // 日程
+            component: () =>
+                import ('./views/Rc.vue')
+        },
+        {
+            path: '/wqgl',
+            // 外勤管理
+            component: () =>
+                import ('./views/Wqgl.vue')
+        },
+        {
+            path: '/cpgl',
+            // 产品管理
+            component: () =>
+                import ('./views/Cpgl.vue')
         }
     ]
 })

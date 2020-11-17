@@ -71,7 +71,7 @@
                     <span>今日归还的</span>
                   </el-tab-pane>
                   <el-tab-pane label="自定义条件">
-                    <img src="../assets/img/23.png" width="272px" />
+                    <img src="../assets/img/23.png" width="270px" />
                   </el-tab-pane>
                 </el-tabs>
                 <el-button slot="reference">
@@ -126,16 +126,27 @@
             <div class="main2-1">
               <span>
                 <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
-                  <el-button slot="reference" style="border: none">
-                    <img src="../assets/img/u2650.svg" width="20px" />
-                  </el-button>
+                <el-button
+                  slot="reference"
+                  @click="drawer = true"
+                  style="border: none"
+                >
+                  <img src="../assets/img/u2650.svg" width="20px" />
+                </el-button>
+                <el-drawer
+                  title="我是标题"
+                  :visible.sync="drawer"
+                  :with-header="false"
+                >
+                  <h2><img src="../assets/img/u2037.svg" style="vertical-align: top;" width="25px">新建公共池客户</h2>
+                </el-drawer>
                 <!-- </el-popover> -->
               </span>
               <span>
                 <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
-                  <el-button slot="reference" style="border: none">
-                    <img src="../assets/img/u2659.svg" width="20px" />
-                  </el-button>
+                <el-button slot="reference" style="border: none">
+                  <img src="../assets/img/u2659.svg" width="20px" />
+                </el-button>
                 <!-- </el-popover> -->
               </span>
               <span>
@@ -569,6 +580,7 @@ export default {
       ],
       multipleSelection: [],
       tabPosition: "left",
+      drawer: false
     };
   },
   methods: {

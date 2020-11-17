@@ -1,5 +1,5 @@
 <template>
-  <div id="xs">
+  <div id="khgl">
     <Header></Header>
     <el-container class="sec">
       <el-aside class="aside">
@@ -10,7 +10,6 @@
               客户主线<i class="el-icon-arrow-down el-icon--right"></i>
             </span>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item>全部</el-dropdown-item>
               <el-dropdown-item>主分类</el-dropdown-item>
               <el-dropdown-item>行业</el-dropdown-item>
             </el-dropdown-menu>
@@ -85,7 +84,7 @@
           </div>
           <div>
             <el-card shadow="hover">
-              全部商机<br />
+              全部客户<br />
               <h4>69</h4>
             </el-card>
           </div>
@@ -97,14 +96,14 @@
           </div>
           <div>
             <el-card shadow="hover">
-              今日应联系<br />
+              公海客户<br />
               <h4>5</h4>
             </el-card>
           </div>
           <div>
             <el-card shadow="hover">
-              分配给我的<br />
-              <h4>1</h4>
+              今日应联系<br />
+              <h4>5</h4>
             </el-card>
           </div>
           <div>
@@ -133,11 +132,18 @@
           <div>
             已选
             <span style="font-weight: bold">6</span> 条
-            <el-button :plain="true" @click="open1">领取</el-button>
+            <el-button :plain="true" @click="open1">领用</el-button>
             <el-button :plain="true" @click="open2">分配</el-button>
             <el-button :plain="true" @click="open2">发短信</el-button>
             <div class="main2-1">
-              <span><img src="../assets/img/25.png" width="20px" style="vertical-align: buttom;"> 预警：即将有5条商机自动转入公共池，立即查看！</span>
+              <span>
+                <img
+                  src="../assets/img/25.png"
+                  width="20px"
+                  style="vertical-align: buttom"
+                />
+                预警：即将有6条商机自动转入公共池，立即查看！
+              </span>
               <span>
                 <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
                 <el-button slot="reference" style="border: none">
@@ -276,10 +282,10 @@
 .main2-1 {
   float: right;
 }
-.main2-1>span:nth-of-type(1) {
-    position: relative;
-    top: -5px;
-    right: 30px;
+.main2-1 > span:nth-of-type(1) {
+  position: relative;
+  top: -5px;
+  right: 30px;
   color: red;
   text-decoration: underline;
 }
@@ -307,7 +313,7 @@
 }
 </style>
 <style lang="scss">
-#xs {
+#khgl {
   .el-card__body h4 {
     text-align: center;
   }
