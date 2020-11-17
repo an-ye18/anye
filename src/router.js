@@ -90,9 +90,21 @@ export default new Router({
         },
         {
             path: '/cpgl',
-            // 产品管理
+            // 产品
             component: () =>
                 import ('./views/Cpgl.vue')
+        },
+        {
+            path: '/ybp',
+            // 仪表盘
+            component: () =>
+                import ('./views/Ybp.vue')
+        },
+        {
+            path: '/sjbb',
+            // 数据报表
+            component: () =>
+                import ('./views/Sjbb.vue')
         }
     ]
 })

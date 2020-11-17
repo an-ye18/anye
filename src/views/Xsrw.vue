@@ -509,18 +509,5 @@ export default {
       tabPosition: "left",
     };
   },
-  methods: {
-    open1() {
-      this.$message({
-        message: "已领用成功",
-        type: "success",
-      });
-    },
-    open2() {
-      this.$message({
-        message: "请先选择要分配的客户",
-      });
-    },
-  },
 };
 </script>

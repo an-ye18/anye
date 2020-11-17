@@ -68,16 +68,26 @@
           </template>
           <el-menu-item-group>
             <span slot="title">统计分析</span>
-            <el-menu-item index="1-1">仪表盘</el-menu-item>
-            <el-menu-item index="1-2">数据报表</el-menu-item>
-            <el-menu-item index="1-3">销售分析</el-menu-item>
-            <el-menu-item index="1-4">客户分析</el-menu-item>
+            <router-link to="/ybp">
+              <el-menu-item index="1-1">仪表盘</el-menu-item>
+            </router-link>
+            <router-link to="/sjbb">
+              <el-menu-item index="1-2">数据报表</el-menu-item>
+            </router-link>
+            <router-link to="/xsfx">
+              <el-menu-item index="1-3">销售分析</el-menu-item>
+            </router-link>
+            <router-link to="/khfx">
+              <el-menu-item index="1-4">客户分析</el-menu-item>
+            </router-link>
           </el-menu-item-group>
         </el-submenu>
-        <el-menu-item index="4">
-          <i class="el-icon-reading"></i>
-          <span slot="title">知识库</span>
-        </el-menu-item>
+        <router-link to="/zsk">
+          <el-menu-item index="4">
+            <i class="el-icon-reading"></i>
+            <span slot="title">知识库</span>
+          </el-menu-item>
+        </router-link>
       </el-menu>
     </div>
     <div>
@@ -114,7 +124,7 @@
               <el-button
                 class="el-icon-s-order btn"
                 slot="reference"
-                style="font-size: 16px; color: #3a8ee6"
+                style="font-size: 13px; color: #3a8ee6"
               ></el-button>
             </el-popover>
           </template>
