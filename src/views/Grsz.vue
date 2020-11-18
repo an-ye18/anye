@@ -85,9 +85,13 @@
               <el-input v-model="formLabelAlign.zhineng"></el-input>
             </el-form-item>
           </el-form>
-          <el-button type="primary" size="mini" style="float: right"
-            >保存</el-button
-          >
+          <el-button
+            type="primary"
+            @click="onSubmit"
+            size="mini"
+            style="float: right"
+            >保存
+          </el-button>
         </div>
       </el-main>
     </el-container>
@@ -192,6 +196,11 @@ export default {
         zhineng: "销售主管",
       },
     };
+  },
+  methods: {
+    onSubmit() {
+      alert("保存成功！");
+    },
   },
 };
 </script>

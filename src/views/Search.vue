@@ -36,10 +36,6 @@
                 }}</el-checkbox>
               </el-checkbox-group></span
             >
-            <!-- <div>
-          <img src="../assets/img/u1090.png"/>&nbsp;
-          <a style="color:#3a8ee6;cursor: pointer;text-decoration: underline;">高级搜索</a>
-        </div> -->
           </div>
         </template>
       </div>

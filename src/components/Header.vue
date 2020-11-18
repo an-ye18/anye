@@ -176,23 +176,6 @@
           </el-row>
         </span>
       </div>
-      <!-- <div class="topL">
-      <el-tabs
-        v-model="editableTabsValue"
-        type="card"
-        closable
-        @tab-remove="removeTab"
-      >
-        <el-tab-pane
-          v-for="item in editableTabs"
-          :key="item.name"
-          :label="item.title"
-          :name="item.name"
-        >
-          {{ item.content }}
-        </el-tab-pane>
-      </el-tabs>
-    </div> -->
     </div>
   </div>
 </template>

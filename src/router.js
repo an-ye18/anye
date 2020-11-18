@@ -105,6 +105,24 @@ export default new Router({
             // 数据报表
             component: () =>
                 import ('./views/Sjbb.vue')
+        },
+        {
+            path: '/xsfx',
+            // 销售分析
+            component: () =>
+                import ('./views/Xsfx.vue')
+        },
+        {
+            path: '/khfx',
+            // 客户分析
+            component: () =>
+                import ('./views/Khfx.vue')
+        },
+        {
+            path: '/zsk',
+            // 知识库
+            component: () =>
+                import ('./views/Zsk.vue')
         }
     ]
 })

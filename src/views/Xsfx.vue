@@ -1,56 +1,72 @@
 <template>
-  <div id="sjbb">
+  <div id="xsfx">
     <Header></Header>
     <el-container class="sec">
       <el-aside class="aside">
         <p class="aside1">
-          <img src="../assets/img/u10711.svg" width="25px" /> 数据报表
+          <img src="../assets/img/u10857.svg" width="25px" /> 销售分析
         </p>
         <el-menu>
           <el-submenu index="1">
             <template slot="title">
-              <img src="../assets/img/u10712.svg" width="20px" /> 客户数据统计
+              <img src="../assets/img/u10858.svg" width="20px" /> 销售过程分析
             </template>
             <el-menu-item-group class="aside2">
-              <el-menu-item index="1-1"> 公共池客户统计</el-menu-item>
-              <el-menu-item index="1-2"> 客户类型统计</el-menu-item>
-              <el-menu-item index="1-3"> 客户来源统计</el-menu-item>
-              <el-menu-item index="1-4"> 客户区域统计</el-menu-item>
-              <el-menu-item index="1-5"> 客户行业统计</el-menu-item>
-              <el-menu-item index="1-6"> 客户价值统计</el-menu-item>
-              <el-menu-item index="1-7"> 月度新增客户统计</el-menu-item>
-              <el-menu-item index="1-8"> 部门客户数量对比</el-menu-item>
+              <el-menu-item index="1-1"> 销售漏斗分析</el-menu-item>
+              <el-menu-item index="1-2"> 新增商机趋势</el-menu-item>
+              <el-menu-item index="1-3"> 预计成交金额分析</el-menu-item>
+              <el-menu-item index="1-4"> 跟单转化率分析</el-menu-item>
+              <el-menu-item index="1-5"> 商机区域分布</el-menu-item>
+              <el-menu-item index="1-6"> 销售周期分析</el-menu-item>
+              <el-menu-item index="1-7"> 平均客单价分析</el-menu-item>
+              <el-menu-item index="1-8"> 商机转化率分析</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="2">
             <template slot="title">
-              <img src="../assets/img/u10712.svg" width="20px" /> 销售数据统计
+              <img src="../assets/img/u10858.svg" width="20px" /> 销售结果分析
             </template>
             <el-menu-item-group class="aside2">
-              <el-menu-item index="1-1"> 新增商机统计</el-menu-item>
-              <el-menu-item index="1-2"> 新增跟单统计</el-menu-item>
-              <el-menu-item index="1-3"> 跟单阶段统计</el-menu-item>
-              <el-menu-item index="1-4"> 商机来源统计</el-menu-item>
-              <el-menu-item index="1-5"> 预计成交额统计</el-menu-item>
-              <el-menu-item index="1-6"> 商机负责人统计</el-menu-item>
-              <el-menu-item index="1-7"> 跟单负责人统计</el-menu-item>
-              <el-menu-item index="1-8"> 部门商机统计</el-menu-item>
-              <el-menu-item index="1-9"> 部门跟单统计</el-menu-item>
+              <el-menu-item index="1-1"> 赢单阶段分析</el-menu-item>
+              <el-menu-item index="1-2"> 输单阶段分析</el-menu-item>
+              <el-menu-item index="1-3"> 成交客户分析</el-menu-item>
+              <el-menu-item index="1-4"> 部门业绩分析</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3">
             <template slot="title">
-              <img src="../assets/img/u10712.svg" width="20px" /> 合同数据统计
+              <img src="../assets/img/u10858.svg" width="20px" /> 销售行为趋势
             </template>
             <el-menu-item-group class="aside2">
-              <el-menu-item index="1-1"> 合同类型统计</el-menu-item>
-              <el-menu-item index="1-2"> 合同金额统计</el-menu-item>
-              <el-menu-item index="1-3"> 合同状态统计</el-menu-item>
-              <el-menu-item index="1-4"> 合同回款统计</el-menu-item>
-              <el-menu-item index="1-5"> 月度合同统计</el-menu-item>
-              <el-menu-item index="1-6"> 汇款类型统计</el-menu-item>
-              <el-menu-item index="1-7"> 部门回款统计</el-menu-item>
+              <el-menu-item index="1-1"> 跟进次数分析</el-menu-item>
+              <el-menu-item index="1-2"> 跟进方式分析</el-menu-item>
+              <el-menu-item index="1-3"> 跟进中与成交对比</el-menu-item>
             </el-menu-item-group>
+          </el-submenu>
+          <el-submenu index="4">
+            <template slot="title">
+              <img src="../assets/img/u10858.svg" width="20px" /> 合同回款分析
+            </template>
+            <el-menu-item-group class="aside2">
+              <el-menu-item index="1-1"> 合同数量分析</el-menu-item>
+              <el-menu-item index="1-2"> 合同金额分析</el-menu-item>
+              <el-menu-item index="1-3"> 回款金额分析</el-menu-item>
+              <el-menu-item index="1-4"> 部门对比分析</el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+          <el-submenu index="5">
+            <template slot="title">
+              <img src="../assets/img/u10858.svg" width="20px" /> 销售任务分析
+            </template>
+            <el-menu-item-group class="aside2">
+              <el-menu-item index="1-1"> 业绩完成度分析</el-menu-item>
+              <el-menu-item index="1-2"> 部门业绩任务分析</el-menu-item>
+            </el-menu-item-group>
+          </el-submenu>
+          <el-submenu index="6">
+            <template slot="title">
+              <img src="../assets/img/u10858.svg" width="20px" /> 产品销量分析
+            </template>
           </el-submenu>
         </el-menu>
       </el-aside>
@@ -62,12 +78,12 @@
               width="25px"
               style="vertical-align: top"
             />
-            公共池客户统计
+            销售漏斗分析
           </h2>
         </div>
         <div class="mainAll">
-          <Sjbb1></Sjbb1>
-          <Sjbb2></Sjbb2>
+          <Xsfx1></Xsfx1>
+          <Xsfx2></Xsfx2>
         </div>
           <div class="main4">
           <h2>报表</h2>
@@ -118,7 +134,7 @@
             </ul>
         </div>
         <div class="main5">
-          <img src="../assets/img/u10640.png" width="880px">
+          <img src="../assets/img/u10785.png" width="880px">
         </div>
       </el-main>
     </el-container>
@@ -175,6 +191,9 @@
   margin-top: -15px;
   border-bottom: 2px solid rgb(61 177 255);
 }
+.mainAll{
+    height: 330px;
+}
 .mainAll > div {
   float: left;
 }
@@ -204,7 +223,7 @@
 }
 </style>
 <style lang="scss">
-#sjbb {
+#xsfx {
   .el-button {
     display: inline-block;
     line-height: 1;
@@ -250,13 +269,13 @@
 </style>
 <script>
 import Header from "../components/Header";
-import Sjbb1 from "../components/Sjbb1";
-import Sjbb2 from "../components/Sjbb2";
+import Xsfx1 from "../components/Xsfx1";
+import Xsfx2 from "../components/Xsfx2";
 export default {
   components: {
     Header,
-    Sjbb1,
-    Sjbb2,
+    Xsfx1,
+    Xsfx2,
   },
   data() {
     return {

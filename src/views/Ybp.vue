@@ -1,5 +1,5 @@
 <template>
-  <div id="xsrw">
+  <div id="ybp">
     <Header></Header>
     <el-container class="sec">
       <el-main class="main">
@@ -81,7 +81,7 @@
 }
 </style>
 <style lang="scss">
-#xsrw {
+#ybp {
   .el-button {
     display: inline-block;
     line-height: 1;
