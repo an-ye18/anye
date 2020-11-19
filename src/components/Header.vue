@@ -92,12 +92,13 @@
     </div>
     <div>
       <div class="topR">
-        <span
-          ><img
+        <span>
+          <img
             src="../assets/img/u724.svg"
             width="22px"
             style="position: relative; left: -38px; top: 5px"
-        /></span>
+          />
+        </span>
         <span
           ><input
             type="text"
@@ -251,6 +252,9 @@ a {
   border: 1px solid #ebeef5;
   border-radius: 4px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+.alert1 > p {
+  float: left;
 }
 </style>
 <script>

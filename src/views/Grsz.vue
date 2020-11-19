@@ -9,7 +9,7 @@
         <el-menu>
           <el-submenu index="1">
             <template slot="title">
-              <img src="../assets/img/19.png" /> 我的资料
+                <img src="../assets/img/19.png" /> 我的资料
             </template>
           </el-submenu>
           <el-submenu index="2">
@@ -25,9 +25,9 @@
             <template slot="title">
               <img src="../assets/img/21.png" /> 平台配置
             </template>
-            <el-menu-item-group>
-              <el-menu-item index="1-1">平台配置</el-menu-item>
-            </el-menu-item-group>
+              <el-menu-item-group>
+                <el-menu-item index="1-1">平台配置</el-menu-item>
+              </el-menu-item-group>
           </el-submenu>
           <el-submenu index="4">
             <template slot="title">
@@ -40,58 +40,60 @@
         </el-menu>
       </el-aside>
       <el-main class="main">
-        <p class="aside2"><span>|</span> 我的资料</p>
-        <p class="aside3">
-          <img
-            src="../assets/img/8-1.png"
-            width="20px"
-          />你可以在这里修改个人资料。
-        </p>
-        <div class="aside4">
-          <el-form
-            :label-position="labelPosition"
-            label-width="80px"
-            :model="formLabelAlign"
-            size="mini"
-          >
-            <el-form-item label="头像:">
-              <p class="aside4-1">
-                <img src="../assets/img/u705.png" width="60px" />
-                <span> <i class="el-icon-edit-outline"></i> 修改头像 </span>
-              </p>
-            </el-form-item>
-            <el-form-item label="员工编号:">
-              <el-input v-model="formLabelAlign.no"></el-input>
-            </el-form-item>
-            <el-form-item label="姓名:">
-              <el-input v-model="formLabelAlign.name"></el-input>
-            </el-form-item>
-            <el-form-item label="性别:">
-              <el-input v-model="formLabelAlign.sex"></el-input>
-            </el-form-item>
-            <el-form-item label="生日:">
-              <el-input v-model="formLabelAlign.birth"></el-input>
-            </el-form-item>
-            <el-form-item label="微信:">
-              <el-input v-model="formLabelAlign.vchart"></el-input>
-            </el-form-item>
-            <el-form-item label="电话:">
-              <el-input v-model="formLabelAlign.num"></el-input>
-            </el-form-item>
-            <el-form-item label="部门:">
-              <el-input v-model="formLabelAlign.bumen"></el-input>
-            </el-form-item>
-            <el-form-item label="职能:">
-              <el-input v-model="formLabelAlign.zhineng"></el-input>
-            </el-form-item>
-          </el-form>
-          <el-button
-            type="primary"
-            @click="onSubmit"
-            size="mini"
-            style="float: right"
-            >保存
-          </el-button>
+        <div>
+          <p class="aside2"><span>|</span> 我的资料</p>
+          <p class="aside3">
+            <img
+              src="../assets/img/8-1.png"
+              width="20px"
+            />你可以在这里修改个人资料。
+          </p>
+          <div class="aside4">
+            <el-form
+              :label-position="labelPosition"
+              label-width="80px"
+              :model="formLabelAlign"
+              size="mini"
+            >
+              <el-form-item label="头像:">
+                <p class="aside4-1">
+                  <img src="../assets/img/u705.png" width="60px" />
+                  <span> <i class="el-icon-edit-outline"></i> 修改头像 </span>
+                </p>
+              </el-form-item>
+              <el-form-item label="员工编号:">
+                <el-input v-model="formLabelAlign.no"></el-input>
+              </el-form-item>
+              <el-form-item label="姓名:">
+                <el-input v-model="formLabelAlign.name"></el-input>
+              </el-form-item>
+              <el-form-item label="性别:">
+                <el-input v-model="formLabelAlign.sex"></el-input>
+              </el-form-item>
+              <el-form-item label="生日:">
+                <el-input v-model="formLabelAlign.birth"></el-input>
+              </el-form-item>
+              <el-form-item label="微信:">
+                <el-input v-model="formLabelAlign.vchart"></el-input>
+              </el-form-item>
+              <el-form-item label="电话:">
+                <el-input v-model="formLabelAlign.num"></el-input>
+              </el-form-item>
+              <el-form-item label="部门:">
+                <el-input v-model="formLabelAlign.bumen"></el-input>
+              </el-form-item>
+              <el-form-item label="职能:">
+                <el-input v-model="formLabelAlign.zhineng"></el-input>
+              </el-form-item>
+            </el-form>
+            <el-button
+              type="primary"
+              @click="onSubmit"
+              size="mini"
+              style="float: right"
+              >保存
+            </el-button>
+          </div>
         </div>
       </el-main>
     </el-container>

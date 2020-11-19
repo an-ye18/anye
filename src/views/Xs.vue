@@ -137,20 +137,156 @@
             <el-button :plain="true" @click="open2">分配</el-button>
             <el-button :plain="true" @click="open2">发短信</el-button>
             <div class="main2-1">
-              <span><img src="../assets/img/25.png" width="20px" style="vertical-align: buttom;"> 预警：即将有5条商机自动转入公共池，立即查看！</span>
-              <span>
-                <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
-                <el-button slot="reference" style="border: none">
+              <span
+                ><img
+                  src="../assets/img/25.png"
+                  width="20px"
+                  style="vertical-align: buttom"
+                />
+                预警：即将有5条商机自动转入公共池，立即查看！</span
+              >
+              <span class="main2-2">
+                <el-button
+                  slot="reference"
+                  @click="drawer = true"
+                  style="border: none"
+                >
                   <img src="../assets/img/u2650.svg" width="20px" />
                 </el-button>
-                <!-- </el-popover> -->
+                <el-drawer
+                  title="我是标题"
+                  :visible.sync="drawer"
+                  :with-header="false"
+                  size="35%"
+                >
+                  <h2>
+                    <img src="../assets/img/u2037.svg" width="25px" />
+                    新建公共池客户
+                  </h2>
+                  <div style="height: 1200px">
+                    <el-form
+                      ref="form"
+                      :model="form"
+                      label-width="80px"
+                      size="mini"
+                      style="overflow-y: scroll; height: 520px"
+                    >
+                      <p
+                        style="
+                          background: #f4f4f5;
+                          padding: 10px 21px;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        客户信息
+                      </p>
+                      <div style="padding-right: 20px">
+                        <el-form-item label="客户名称">
+                          <el-input
+                            placeholder="输入客户名称"
+                            style="width: 193px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="行业">
+                          <el-select placeholder="选择行业"> </el-select>
+                        </el-form-item>
+                        <el-form-item label="地区">
+                          <el-select placeholder="选择地区"> </el-select>
+                        </el-form-item>
+                        <el-form-item label="地址">
+                          <el-input
+                            placeholder="输入详细地址"
+                            style="width: 193px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="简介">
+                          <el-input
+                            type="textarea"
+                            placeholder="记录点什么"
+                          ></el-input>
+                        </el-form-item>
+                      </div>
+                      <p
+                        style="
+                          background: #f4f4f5;
+                          padding: 10px 21px;
+                          margin-bottom: 10px;
+                        "
+                      >
+                        联系人信息
+                      </p>
+                      <div class="form" style="padding-right: 20px">
+                        <el-form-item label="联系人">
+                          <el-input
+                            placeholder="输入姓名"
+                            style="width: 110px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="性别">
+                          <el-select
+                            placeholder="选择性别"
+                            style="width: 110px"
+                          >
+                          </el-select>
+                        </el-form-item>
+                        <el-form-item label="办公电话">
+                          <el-input
+                            placeholder="输入电话"
+                            style="width: 110px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="角色">
+                          <el-select
+                            placeholder="选择角色"
+                            style="width: 110px"
+                          >
+                          </el-select>
+                        </el-form-item>
+                        <el-form-item label="微信">
+                          <el-input
+                            placeholder="输入微信号"
+                            style="width: 110px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="邮箱">
+                          <el-input
+                            placeholder="输入邮箱"
+                            style="width: 110px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="手机号1">
+                          <el-input
+                            placeholder="输入号码"
+                            style="width: 110px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="手机号2">
+                          <el-input
+                            placeholder="输入号码"
+                            style="width: 110px"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item label="备注">
+                          <el-input
+                            type="textarea"
+                            placeholder="记录点什么"
+                          ></el-input>
+                        </el-form-item>
+                        <el-form-item>
+                          <el-button type="primary" @click="onSubmit">
+                            确定
+                          </el-button>
+                          <el-button>取消</el-button>
+                        </el-form-item>
+                      </div>
+                    </el-form>
+                  </div>
+                </el-drawer>
               </span>
               <span>
-                <!-- <el-popover placement="bottom" width="250" trigger="hover"> -->
                 <el-button slot="reference" style="border: none">
                   <img src="../assets/img/u2659.svg" width="20px" />
                 </el-button>
-                <!-- </el-popover> -->
               </span>
               <span>
                 <el-popover placement="bottom" width="250" trigger="hover"
@@ -276,16 +412,19 @@
 .main2-1 {
   float: right;
 }
-.main2-1>span:nth-of-type(1) {
-    position: relative;
-    top: -5px;
-    right: 30px;
+.main2-1 > span:nth-of-type(1) {
+  position: relative;
+  top: -5px;
+  right: 30px;
   color: red;
   text-decoration: underline;
 }
 .main2-1 span {
   margin-right: -20px;
   cursor: pointer;
+}
+.main2-2 h2 {
+  padding: 10px;
 }
 .main3 {
   padding: 10px 0 0;
@@ -324,7 +463,7 @@
     line-height: 1;
     white-space: nowrap;
     cursor: pointer;
-    background: #FFF;
+    background: #fff;
     color: #606266;
     text-align: center;
     box-sizing: border-box;
@@ -379,8 +518,8 @@
   left: 0;
   padding: 0;
   margin: 5px 0;
-  background-color: #FFF;
-  border: 1px solid #EBEEF5;
+  background-color: #fff;
+  border: 1px solid #ebeef5;
   border-radius: 4px;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 }
@@ -409,9 +548,9 @@
 }
 .el-popover {
   position: absolute;
-  background: #FFF;
+  background: #fff;
   min-width: 150px;
-  border: 1px solid #EBEEF5;
+  border: 1px solid #ebeef5;
   padding: 12px;
   z-index: 2000;
   color: #606266;
@@ -590,6 +729,7 @@ export default {
       ],
       multipleSelection: [],
       tabPosition: "left",
+      drawer: false,
     };
   },
   methods: {
@@ -602,6 +742,12 @@ export default {
     open2() {
       this.$message({
         message: "请先选择要分配的客户",
+      });
+    },
+    onSubmit() {
+      this.$message({
+        message: "创建成功！",
+        type: "success",
       });
     },
   },

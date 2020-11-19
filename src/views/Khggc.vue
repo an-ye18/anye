@@ -71,7 +71,6 @@
                     <span>今日归还的</span>
                   </el-tab-pane>
                   <el-tab-pane label="自定义条件">
-                    <!-- <img src="../assets/img/23.png" width="270px" /> -->
                     <el-form
                       ref="form"
                       :model="form"
@@ -99,10 +98,7 @@
                           </el-select>
                         </el-form-item>
                         <el-form-item>
-                          <el-select
-                            placeholder="等于"
-                            style="width: 100px"
-                          >
+                          <el-select placeholder="等于" style="width: 100px">
                           </el-select>
                         </el-form-item>
                         <el-form-item>
@@ -113,13 +109,10 @@
                           </el-select>
                         </el-form-item>
                         <el-form-item>
-                          <el-select
-                            placeholder="等于"
-                            style="width: 100px"
-                          >
+                          <el-select placeholder="等于" style="width: 100px">
                           </el-select>
                         </el-form-item>
-                        <el-form-item style="float:right;margin-top: 20px;">
+                        <el-form-item style="float: right; margin-top: 20px">
                           <el-button type="primary" @click="onSubmit">
                             添加到常用检索
                           </el-button>
@@ -307,7 +300,10 @@
                           ></el-input>
                         </el-form-item>
                         <el-form-item>
-                          <el-button type="primary" @click="onSubmit">
+                          <el-button
+                            type="primary"
+                            @click="onSubmit"
+                          >
                             确定
                           </el-button>
                           <el-button>取消</el-button>
@@ -785,7 +781,10 @@ export default {
       });
     },
     onSubmit() {
-      alert("创建成功!");
+      this.$message({
+        message: "创建成功！",
+        type: "success",
+      });
     },
   },
 };

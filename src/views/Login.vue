@@ -23,7 +23,7 @@
           </p>
           <p>
             <i class="el-icon-unlock"></i>
-            <input type="text " placeholder="请输入登录密码" />
+            <input type="password" placeholder="请输入登录密码" />
           </p>
           <div class="div2">
             <input type="checkbox" /> 新弹窗体<span style="color: #5ca3ff"
